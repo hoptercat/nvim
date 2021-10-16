@@ -1,0 +1,40 @@
+vim.api.nvim_set_keymap("i", "<C-s>", ":<C-u>write<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<C-s>", ":<C-u>write<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<C-q>", "<esc>:wq<CR>", {})
+
+vim.api.nvim_set_keymap("i", "<C-h>", "<BS>", {})
+vim.api.nvim_set_keymap("i", "<C-d>", "<Del>", {noremap = true})
+vim.api.nvim_set_keymap("i", "<C-S>", "<esc>:w<CR>", {})
+vim.api.nvim_set_keymap("i", "<C-q>", "<esc>:wq<CR>", {})
+
+vim.api.nvim_set_keymap("n", "j", "<Plug>(accelerated_jk_gj)", {silent = true})
+vim.api.nvim_set_keymap("n", "k", "<Plug>(accelerated_jk_gk)", {silent = true})
+
+-- switch window
+vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", {noremap = true})
+vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", {noremap = true})
+vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", {noremap = true})
+vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", {noremap = true})
+vim.api.nvim_set_keymap("n", "<A-j>", ":Sayonara<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<A-h>", ":bp<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<A-l>", ":bn<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>ws", ":<C-u>sp<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>wv", ":<C-u>vs<CR>", {noremap = true})
+
+vim.api.nvim_set_keymap("n", "<Leader>e", ":<C-u>NvimTreeToggle<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>F", ":<C-u>NvimTreeFindFile<CR>", {silent = true, noremap = true})
+
+vim.api.nvim_set_keymap("n", "<Leader>1", "<cmd>BufferLineGoToBuffer 1<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>2", "<cmd>BufferLineGoToBuffer 2<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>3", "<cmd>BufferLineGoToBuffer 3<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>4", "<cmd>BufferLineGoToBuffer 4<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>5", "<cmd>BufferLineGoToBuffer 5<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>6", "<cmd>BufferLineGoToBuffer 6<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>7", "<cmd>BufferLineGoToBuffer 7<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>8", "<cmd>BufferLineGoToBuffer 8<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>9", "<cmd>BufferLineGoToBuffer 9<CR>", {silent = true, noremap = true})
+
+vim.api.nvim_set_keymap("n", "<Leader>bb", ":<C-u>Telescope buffers<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>fa", ":<C-u>Telescope live_grep<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>ff", ":<C-u>Telescope find_files<CR>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>fh", ":<C-u>DashboardFindHistory<CR>", {silent = true, noremap = true})
