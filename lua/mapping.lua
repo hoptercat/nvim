@@ -6,6 +6,7 @@ vim.api.nvim_set_keymap("i", "<C-h>", "<BS>", {})
 vim.api.nvim_set_keymap("i", "<C-d>", "<Del>", {noremap = true})
 vim.api.nvim_set_keymap("i", "<C-S>", "<esc>:w<CR>", {})
 vim.api.nvim_set_keymap("i", "<C-q>", "<esc>:wq<CR>", {})
+vim.api.nvim_set_keymap("i", "jj", "<esc>", {})
 
 vim.api.nvim_set_keymap("n", "j", "<Plug>(accelerated_jk_gj)", {silent = true})
 vim.api.nvim_set_keymap("n", "k", "<Plug>(accelerated_jk_gk)", {silent = true})
