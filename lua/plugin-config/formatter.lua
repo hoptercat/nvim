@@ -29,6 +29,14 @@ require("formatter").setup(
         -- prettier
         Prettier
       },
+      go = {
+        function()
+          return {
+            exe = "gofmt",
+            stdin = true
+          }
+        end
+      },
       lua = {
         -- luafmt
         function()
